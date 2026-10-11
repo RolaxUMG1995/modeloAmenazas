@@ -739,9 +739,39 @@
           }
         ],
         "description": "Muestra la arquitectura que implementa la aplicación la cual esta desplegada en la nuve de Azure, con servicios de Azure Web app static, web services y SQL server"
+      },
+      {
+        "id": 1,
+        "title": "Autenticación y Autorización",
+        "diagramType": "STRIDE",
+        "placeholder": "Descripción de nuevo diagrama STRIDE",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": [],
+        "description": "Muestra la manera en la que el usuario se autentica y se autorizan sus transacciones"
+      },
+      {
+        "id": 2,
+        "title": "Ejecutar partida por jugador",
+        "diagramType": "STRIDE",
+        "placeholder": "Descripción de nuevo diagrama STRIDE",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": [],
+        "description": "Muestra el flujo de datos de una ejecución de partida."
+      },
+      {
+        "id": 3,
+        "title": "Realizar transaccion",
+        "diagramType": "STRIDE",
+        "placeholder": "Descripción de nuevo diagrama STRIDE",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": [],
+        "description": "Muestra el flujo de datos cuando un editor habilita partidas para los jugadores."
       }
     ],
-    "diagramTop": 1,
+    "diagramTop": 4,
     "reviewer": "Matthew Seigne",
     "threatTop": 0
   }
