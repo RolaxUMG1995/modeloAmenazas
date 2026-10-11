@@ -21,12 +21,12 @@
         "cells": [
           {
             "position": {
-              "x": 481.25,
-              "y": 50
+              "x": 501.25,
+              "y": 135
             },
             "size": {
               "width": 570,
-              "height": 300
+              "height": 150
             },
             "attrs": {
               "label": {
@@ -45,14 +45,12 @@
               "hasOpenThreats": false,
               "crossingFlows": [
                 "309fe14f-52f6-4fa0-a1d3-e5aa92a28ab3",
-                "527f33db-0519-4c3f-95d2-3c2fff7ac95f",
-                "7e24f2db-9428-4611-86ee-4a26655196cb"
+                "40575da7-519d-451c-9e81-5efea04ceb2a"
               ],
               "containedElements": [
                 "00cf8bce-415e-4f83-be78-f6da27d56c01",
                 "b20d0c0f-14ac-4dcb-92ca-6a8b1668da55",
-                "3f44a857-c610-4f29-b510-d539571df052",
-                "4c3e190e-910a-4c7f-9b26-48b5619028cb"
+                "3f44a857-c610-4f29-b510-d539571df052"
               ]
             }
           },
@@ -292,8 +290,8 @@
           },
           {
             "position": {
-              "x": 710,
-              "y": 120
+              "x": 730,
+              "y": 180
             },
             "size": {
               "width": 112.5,
@@ -409,8 +407,8 @@
           },
           {
             "position": {
-              "x": 900,
-              "y": 190
+              "x": 910,
+              "y": 180
             },
             "size": {
               "width": 120,
@@ -627,75 +625,15 @@
             "labels": [
               ""
             ],
-            "id": "527f33db-0519-4c3f-95d2-3c2fff7ac95f",
+            "id": "40575da7-519d-451c-9e81-5efea04ceb2a",
             "source": {
-              "x": 823,
-              "y": 140
+              "x": 843,
+              "y": 210
             },
             "target": {
               "cell": "3f44a857-c610-4f29-b510-d539571df052",
-              "port": "733f922d-bff4-4b60-a3b3-ea7075ccf3b3"
-            },
-            "vertices": [
-              {
-                "x": 890,
-                "y": 170
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "81368836-0bfa-41c7-b45f-75568b923d40"
-              ]
-            },
-            "labels": [
-              ""
-            ],
-            "id": "7e24f2db-9428-4611-86ee-4a26655196cb",
-            "source": {
-              "x": 823,
-              "y": 278
-            },
-            "target": {
-              "cell": "3f44a857-c610-4f29-b510-d539571df052",
-              "port": "c649cd01-1857-4a5e-ae42-c374dbcdd097"
-            },
-            "vertices": [
-              {
-                "x": 880,
-                "y": 278
-              }
-            ]
+              "port": "9fa096a3-93fa-44e4-85e2-7ba601b9a4a9"
+            }
           },
           {
             "shape": "flow",
@@ -733,194 +671,71 @@
             "labels": [
               ""
             ],
-            "id": "db718097-e7bb-419e-b3bd-07285ba644bf",
+            "id": "f4a5ae33-cbec-4343-b25f-a3fb74b11d14",
             "source": {
               "cell": "00cf8bce-415e-4f83-be78-f6da27d56c01",
-              "port": "a3a98517-9e66-47ed-8ef2-6cc95aea703d"
-            },
-            "target": {
-              "cell": "4c3e190e-910a-4c7f-9b26-48b5619028cb",
-              "port": "5ef5be01-fe41-4661-bc02-c13f63bc05c8"
-            },
-            "vertices": [
-              {
-                "x": 640,
-                "y": 280
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": "block"
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": true,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              ""
-            ],
-            "id": "3067f921-0123-410c-bf40-08130af08755",
-            "source": {
-              "cell": "00cf8bce-415e-4f83-be78-f6da27d56c01",
-              "port": "2bdcc8d0-9105-468a-921c-c00bd9b150dc"
+              "port": "e3fff10e-59ff-4c6d-a185-04b40a481e75"
             },
             "target": {
               "cell": "b20d0c0f-14ac-4dcb-92ca-6a8b1668da55",
               "port": "5ef5be01-fe41-4661-bc02-c13f63bc05c8"
             },
-            "vertices": [
-              {
-                "x": 620,
-                "y": 160
-              },
-              {
-                "x": 670,
-                "y": 160
-              }
-            ]
-          },
-          {
-            "position": {
-              "x": 710,
-              "y": 250
-            },
-            "size": {
-              "width": 112.5,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "Games Service"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
+            "vertices": [],
+            "tools": {
               "items": [
-                {
-                  "group": "top",
-                  "id": "2bdcc8d0-9105-468a-921c-c00bd9b150dc"
-                },
-                {
-                  "group": "right",
-                  "id": "e3fff10e-59ff-4c6d-a185-04b40a481e75"
-                },
-                {
-                  "group": "bottom",
-                  "id": "a3a98517-9e66-47ed-8ef2-6cc95aea703d"
-                },
-                {
-                  "group": "left",
-                  "id": "5ef5be01-fe41-4661-bc02-c13f63bc05c8"
-                }
-              ]
-            },
-            "id": "4c3e190e-910a-4c7f-9b26-48b5619028cb",
-            "data": {
-              "type": "tm.Actor",
-              "name": "Games Service",
-              "description": "",
-              "isTrustBoundary": false,
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "providesAuthentication": false,
-              "threats": []
-            },
-            "zIndex": 11
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           }
         ],
         "description": "Muestra la arquitectura que implementa la aplicación la cual esta desplegada en la nuve de Azure, con servicios de Azure Web app static, web services y SQL server"
