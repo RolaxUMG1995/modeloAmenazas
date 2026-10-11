@@ -1,0 +1,29 @@
+{
+  "version": "2.6.2",
+  "release_version": "1.0",
+  "released_at": "2026-10-11",
+  "summary": {
+    "title": "Juegos Con Proposito",
+    "owner": "Rolando Lopez",
+    "description": "Consiste en un ecommerc que permite habilitar y gestionar rondas de juegos para distintos usuarios, con el beneficio que los juegos son personalizables segun las necesidades del usuario. Esta construida sobre ReactJS, Node JS y SQL server",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Aquitectura General",
+        "diagramType": "STRIDE",
+        "placeholder": "Descripción de nuevo diagrama STRIDE",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.2",
+        "cells": [],
+        "description": "Muestra la arquitectura que implementa la aplicación la cual esta desplegada en la nuve de Azure, con servicios de Azure Web app static, web services y SQL server"
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "Matthew Seigne",
+    "threatTop": 0
+  }
+}
