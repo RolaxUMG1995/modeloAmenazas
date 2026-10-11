@@ -764,8 +764,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "9113bf95-2eb7-492b-b8cf-6be19c22db8c",
             "zIndex": -1,
+            "id": "9113bf95-2eb7-492b-b8cf-6be19c22db8c",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -804,6 +804,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -887,7 +888,6 @@
               ]
             },
             "id": "d0025fc6-9389-4f9c-8610-93422508e471",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Usuario",
@@ -921,6 +921,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -1004,7 +1005,6 @@
               ]
             },
             "id": "5a9b2df7-7472-472b-a509-9019b118ac25",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Aplicación\nweb",
@@ -1041,6 +1041,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -1137,8 +1138,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 3
+            }
           },
           {
             "position": {
@@ -1151,7 +1151,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Store"
+                "text": "DB Sessions"
               },
               "topLine": {
                 "strokeWidth": 1.5,
@@ -1164,6 +1164,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -1247,10 +1248,9 @@
               ]
             },
             "id": "bac94061-93e6-49a7-9e01-1fa9afc1d742",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
-              "name": "Store",
+              "name": "DB Sessions",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
