@@ -2106,26 +2106,13 @@
                   "new": false,
                   "number": 31,
                   "score": ""
-                },
-                {
-                  "id": "07983818-c402-4a17-9eb9-eeabb1867178",
-                  "title": "DoS",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Denial of service / Denegación de servicio",
-                  "description": "Corrupción o indisponibilidad de datos.",
-                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 32,
-                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "tampering": 1,
                 "repudiation": 1,
                 "informationDisclosure": 0,
-                "denialOfService": 1
+                "denialOfService": 0
               }
             }
           },
