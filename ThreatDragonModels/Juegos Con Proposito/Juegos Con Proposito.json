@@ -910,32 +910,6 @@
                   "new": false,
                   "number": 20,
                   "score": ""
-                },
-                {
-                  "id": "c30e41f6-bc3b-4685-ad27-6410e49b6c06",
-                  "title": "Nueva amenaza STRIDE",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Repudiation / Repudiación",
-                  "description": "Introduzca una descripción para esta amenaza",
-                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 21,
-                  "score": ""
-                },
-                {
-                  "id": "a8e4b078-3ab6-42fd-977a-3fdaa1d1e7c0",
-                  "title": "Nueva amenaza STRIDE",
-                  "status": "Open",
-                  "severity": "TBD",
-                  "type": "Repudiation / Repudiación",
-                  "description": "Introduzca una descripción para esta amenaza",
-                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
-                  "modelType": "STRIDE",
-                  "new": true,
-                  "number": 22,
-                  "score": ""
                 }
               ],
               "threatFrequency": {
@@ -1448,7 +1422,7 @@
                   "title": "Filtración de Hashes o Credenciales",
                   "status": "Open",
                   "severity": "TBD",
-                  "type": "Repudiation / Repudiación",
+                  "type": "Information disclosure / Brecha de información",
                   "description": "Filtración de credenciales o hashes.",
                   "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
                   "modelType": "STRIDE",
@@ -1473,7 +1447,7 @@
               "threatFrequency": {
                 "tampering": 3,
                 "repudiation": 4,
-                "informationDisclosure": 0,
+                "informationDisclosure": 1,
                 "denialOfService": 2
               }
             }
