@@ -1649,8 +1649,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "b4184ff6-9aa3-4dac-9b18-e0f3dd281f7e",
             "zIndex": -1,
+            "id": "b4184ff6-9aa3-4dac-9b18-e0f3dd281f7e",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -1681,13 +1681,14 @@
                 "text": "Usuario"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -1771,7 +1772,6 @@
               ]
             },
             "id": "6f46cfac-d6c7-4b01-867b-a81b7bc7707b",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Usuario",
@@ -1779,9 +1779,27 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "fa174a65-6e74-4eb5-a0bf-8645ae414686",
+                  "title": "Identidad robada.",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing / Spoofing",
+                  "description": "Uso de identidad robada.a",
+                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 23,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -1798,13 +1816,14 @@
                 "text": "Serivico \nGames"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -1895,14 +1914,74 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
-            },
-            "zIndex": 3
+              "threats": [
+                {
+                  "id": "cb41dbb2-bf0f-4a5d-ac38-3496c751b6ab",
+                  "title": "Sesión falsa",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing / Spoofing",
+                  "description": "Uso de sesiones falsificadas.",
+                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 25,
+                  "score": ""
+                },
+                {
+                  "id": "8026e395-6ea6-4df9-a32c-b79438c23c76",
+                  "title": "Lógica Expuesta",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering / Manipulación",
+                  "description": "Manipulación de lógica de puntajes.",
+                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 26,
+                  "score": ""
+                },
+                {
+                  "id": "2835467a-6021-4b87-9968-425cb6c0419c",
+                  "title": "Negación de juego",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation / Repudiación",
+                  "description": "Negación de acciones del jugador.",
+                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 27,
+                  "score": ""
+                },
+                {
+                  "id": "e3d9bf24-fd87-445a-a356-7b819f0f1262",
+                  "title": "DoS",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service / Denegación de servicio",
+                  "description": "Saturación del procesamiento de partidas.",
+                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 28,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 3,
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 2,
+                "elevationOfPrivilege": 0
+              }
+            }
           },
           {
             "position": {
@@ -1918,16 +1997,19 @@
                 "text": "BD Games"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -2011,7 +2093,6 @@
               ]
             },
             "id": "0d10a831-47fd-4d45-9bf1-fc787bb5d30c",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "BD Games",
@@ -2019,13 +2100,59 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "e42bacef-66b1-4051-a20f-0a2464fb42b0",
+                  "title": "Manipulacion de información",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering / Manipulación",
+                  "description": "Modificación de resultados.",
+                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 30,
+                  "score": ""
+                },
+                {
+                  "id": "0bfb305a-c05d-4fbc-ba11-27db523016db",
+                  "title": "Robo de información",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation / Repudiación",
+                  "description": "Extracción de información almacenada.",
+                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 31,
+                  "score": ""
+                },
+                {
+                  "id": "07983818-c402-4a17-9eb9-eeabb1867178",
+                  "title": "DoS",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Denial of service / Denegación de servicio",
+                  "description": "Corrupción o indisponibilidad de datos.",
+                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 32,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
             }
           },
           {
@@ -2821,6 +2948,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "Matthew Seigne",
-    "threatTop": 22
+    "threatTop": 32
   }
 }
