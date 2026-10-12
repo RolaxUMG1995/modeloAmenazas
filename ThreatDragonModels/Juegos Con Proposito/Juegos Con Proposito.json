@@ -2269,7 +2269,7 @@
             },
             "size": {
               "width": 460,
-              "height": 340
+              "height": 360
             },
             "attrs": {
               "label": {
@@ -2278,8 +2278,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "df393e4a-1430-4c25-aa74-03510805e38a",
             "zIndex": -1,
+            "id": "df393e4a-1430-4c25-aa74-03510805e38a",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
@@ -2287,10 +2287,12 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "9054891e-8c12-4cc1-a7ef-83113558184a"
+                "9054891e-8c12-4cc1-a7ef-83113558184a",
+                "976d57d9-723c-4938-a4c4-7fe5a5e1edeb"
               ],
               "containedElements": [
                 "fccbb711-d349-4cba-a089-11583c9dfd24",
+                "398128ba-1c95-412e-b486-dda2162355a2",
                 "8d933d3c-157f-415c-9617-f6d113c61c3d"
               ]
             }
@@ -2309,13 +2311,14 @@
                 "text": "Web App\nCMS"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -2399,7 +2402,6 @@
               ]
             },
             "id": "fccbb711-d349-4cba-a089-11583c9dfd24",
-            "zIndex": 1,
             "data": {
               "type": "tm.Process",
               "name": "Web App\nCMS",
@@ -2407,19 +2409,72 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "50594da6-9d7e-4024-8fd2-c4e5c7c783e0",
+                  "title": "Suplantación de roles",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing / Spoofing",
+                  "description": "Suplantación de roles administrativos.",
+                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 35,
+                  "score": ""
+                },
+                {
+                  "id": "3b13e692-0432-44b0-93d8-104c5114bb16",
+                  "title": "Alteración de contenido",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering / Manipulación",
+                  "description": "Alteración del contenido de los juegos.",
+                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 36,
+                  "score": ""
+                },
+                {
+                  "id": "8fd3b66d-4f09-4587-90e7-83676c497280",
+                  "title": "CMS saturado",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure / Brecha de información",
+                  "description": "Saturación del gestor de contenidos.",
+                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 37,
+                  "score": ""
+                },
+                {
+                  "id": "1dc0342b-3e16-4ff8-acbf-948e5324b8dd",
+                  "title": "Elevación de permisos",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Elevation of privilege / Elevación de privilegios",
+                  "description": "Conversión de editor a administrador.",
+                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 38,
+                  "score": ""
+                }
+              ],
               "threatFrequency": {
-                "spoofing": 0,
-                "tampering": 0,
+                "spoofing": 1,
+                "tampering": 1,
                 "repudiation": 0,
-                "informationDisclosure": 0,
+                "informationDisclosure": 1,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 0
+                "elevationOfPrivilege": 1
               }
             }
           },
@@ -2437,13 +2492,14 @@
                 "text": "Usuario\nEditos"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -2527,7 +2583,6 @@
               ]
             },
             "id": "3f1b28f6-f57a-46ed-bc12-6da9017be591",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Usuario\nEditos",
@@ -2535,9 +2590,40 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "34f96557-6f59-4b8c-b972-47ad9b78d883",
+                  "title": "Robo de Cuenta",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing / Spoofing",
+                  "description": "Robo de cuentas de editor.",
+                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 33,
+                  "score": ""
+                },
+                {
+                  "id": "07d77d76-ef3b-4382-b4e5-78940a37b6b7",
+                  "title": "Nueva amenaza STRIDE",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation / Repudiación",
+                  "description": "Introduzca una descripción para esta amenaza",
+                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 34,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -2554,13 +2640,14 @@
                 "text": "Validación\nAdmin"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -2644,7 +2731,6 @@
               ]
             },
             "id": "398128ba-1c95-412e-b486-dda2162355a2",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Validación\nAdmin",
@@ -2652,12 +2738,73 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "e0e44299-40bc-4615-a2f9-7f5904e8ff73",
+                  "title": "Suplantación de identidad",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing / Spoofing",
+                  "description": "Suplantación de administrador.",
+                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 41,
+                  "score": ""
+                },
+                {
+                  "id": "48697dce-b096-4106-b48b-5092e339c24c",
+                  "title": "Alterar Datos",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering / Manipulación",
+                  "description": "Modificación del proceso de autorización.",
+                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 42,
+                  "score": ""
+                },
+                {
+                  "id": "dabba121-ec0d-41c9-8b94-b750513ed894",
+                  "title": "Falta de Evidencia",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation / Repudiación",
+                  "description": "Falta de evidencia sobre aprobaciones.",
+                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 43,
+                  "score": ""
+                },
+                {
+                  "id": "874b20fc-60ca-4d22-a5dd-8f0548f10cc3",
+                  "title": "Asignación indebida",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure / Brecha de información",
+                  "description": "Asignación indebida de privilegios elevados.",
+                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 44,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -2674,16 +2821,19 @@
                 "text": "DB Sesiones"
               },
               "topLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               },
               "bottomLine": {
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -2767,7 +2917,6 @@
               ]
             },
             "id": "8d933d3c-157f-415c-9617-f6d113c61c3d",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "DB Sesiones",
@@ -2775,13 +2924,46 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isALog": false,
               "isEncrypted": false,
               "isSigned": false,
               "storesCredentials": false,
               "storesInventory": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "a01b4d32-3e91-43f4-ad99-d4ac99820c41",
+                  "title": "Corrupción de información",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering / Manipulación",
+                  "description": "Manipulación de solicitudes de autorización.",
+                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 39,
+                  "score": ""
+                },
+                {
+                  "id": "ee7cadd0-93eb-4e41-9dbc-34b87ff5c2d1",
+                  "title": "Información sensible expuesta",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation / Repudiación",
+                  "description": "Exposición de roles y privilegios.",
+                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 40,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             }
           },
           {
@@ -2921,7 +3103,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "df393e4a-1430-4c25-aa74-03510805e38a"
+              ]
             },
             "labels": [
               "Autoriza / Rechaza"
@@ -2948,6 +3132,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "Matthew Seigne",
-    "threatTop": 32
+    "threatTop": 44
   }
 }
