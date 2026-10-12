@@ -2407,7 +2407,7 @@
                   "title": "CMS saturado",
                   "status": "Open",
                   "severity": "TBD",
-                  "type": "Information disclosure / Brecha de información",
+                  "type": "Denial of service / Denegación de servicio",
                   "description": "Saturación del gestor de contenidos.",
                   "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
                   "modelType": "STRIDE",
@@ -2434,9 +2434,16 @@
                 "tampering": 1,
                 "repudiation": 0,
                 "informationDisclosure": 1,
-                "denialOfService": 0,
+                "denialOfService": 1,
                 "elevationOfPrivilege": 1
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
