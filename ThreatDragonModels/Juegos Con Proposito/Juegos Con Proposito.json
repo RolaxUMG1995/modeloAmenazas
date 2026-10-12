@@ -797,8 +797,8 @@
                 "text": "Usuario"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -895,9 +895,53 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "6b3da251-e02f-4072-b0ab-39bfd41dff1f",
+                  "title": "Suplantación de usuario",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Spoofing / Spoofing",
+                  "description": "Suplantación de usuarios mediante robo de credenciales.",
+                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 20,
+                  "score": ""
+                },
+                {
+                  "id": "c30e41f6-bc3b-4685-ad27-6410e49b6c06",
+                  "title": "Nueva amenaza STRIDE",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation / Repudiación",
+                  "description": "Introduzca una descripción para esta amenaza",
+                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 21,
+                  "score": ""
+                },
+                {
+                  "id": "a8e4b078-3ab6-42fd-977a-3fdaa1d1e7c0",
+                  "title": "Nueva amenaza STRIDE",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation / Repudiación",
+                  "description": "Introduzca una descripción para esta amenaza",
+                  "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 22,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -1020,11 +1064,11 @@
               "threats": [
                 {
                   "id": "eddfd12e-5ed9-45a8-853f-ac47df4e7b4e",
-                  "title": "Suplantación de usuario",
+                  "title": "Suplantación de Token",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Spoofing / Spoofing",
-                  "description": "Suplantación de usuarios mediante robo de credenciales.",
+                  "description": "Suplantación de tokens JWT.",
                   "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
                   "modelType": "STRIDE",
                   "new": false,
@@ -1033,11 +1077,11 @@
                 },
                 {
                   "id": "f5829c4c-5fa2-4dee-9fe7-c3650bf510b4",
-                  "title": "Intercepción de credenciales",
+                  "title": "Mensajes Sensibles",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Information disclosure / Brecha de información",
-                  "description": "Intercepción de credenciales por configuración TLS deficiente.",
+                  "description": "Exposición de mensajes de error sensibles.",
                   "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
                   "modelType": "STRIDE",
                   "new": false,
@@ -1059,10 +1103,10 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 3,
+                "spoofing": 5,
                 "tampering": 1,
                 "repudiation": 0,
-                "informationDisclosure": 3,
+                "informationDisclosure": 4,
                 "denialOfService": 3,
                 "elevationOfPrivilege": 0
               }
@@ -1188,11 +1232,11 @@
               "threats": [
                 {
                   "id": "c9a6261c-35cb-481b-a96f-77186ddaacb6",
-                  "title": "Tokens falsificados",
+                  "title": "Servicio falso",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Spoofing / Spoofing",
-                  "description": "Uso de tokens falsificados.",
+                  "description": "Servicio falso respondiendo solicitudes internas.",
                   "mitigation": "Introduzca la mitigación o prevención para esta amenaza",
                   "modelType": "STRIDE",
                   "new": false,
@@ -1201,7 +1245,7 @@
                 },
                 {
                   "id": "1622f4ca-12b3-4267-a4f4-1c9f930a2ee7",
-                  "title": "Manipulación de tokens",
+                  "title": "Manipulación de atributos de sesión",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Tampering / Manipulación",
@@ -1240,8 +1284,8 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 4,
-                "tampering": 3,
+                "spoofing": 5,
+                "tampering": 5,
                 "repudiation": 0,
                 "informationDisclosure": 3,
                 "denialOfService": 3,
@@ -2777,6 +2821,6 @@
     ],
     "diagramTop": 4,
     "reviewer": "Matthew Seigne",
-    "threatTop": 16
+    "threatTop": 22
   }
 }
